@@ -36,4 +36,4 @@ Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/wordlist]` de
 
 ## Etika dan Hukum
 
-Gunakan LuckyZip dengan bertanggung jawab dan hanya untuk membuka berkas yang Anda memiliki izinnya. Penggunaan yang tidak etis tidak dianjurkan dan dapat memiliki konsekuensi hukum.
+Gunakan LuckyZip dengan bertanggung jawab dan hanya untuk membuka file zip yang Anda memiliki izinnya. Penggunaan yang tidak etis tidak dianjurkan dan dapat memiliki konsekuensi hukum.
