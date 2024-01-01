@@ -37,7 +37,7 @@ def crack_zip(zip_file, wordlist, start_time):
 
 def main():
     print("LucyZip - ZIP Password Cracker")
-    print("This tool can be found at: <https://github.com/rofidoang03/LuckyZip>")
+    print("This tool can be found at: <https://github.com/rofidoang03/LuckyZip>\n")
     if len(sys.argv) != 5 or sys.argv[1] != '-f' or sys.argv[3] != '-w':
         print("\nUsage: python script.py -f [zip_file] -w [wordlist]")
         return
