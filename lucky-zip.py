@@ -40,9 +40,9 @@ def crack_zip(zip_file, wordlist, start_time):
     end_time = time.time()
     duration = end_time - start_time
     if found_password:
-        print(f"\nKata sandi ditemukan: {found_password}")
+        print(f"\n[+] Kata sandi ditemukan: {found_password}")
     else:
-        print("\nKata sandi tidak ditemukan.")
+        print("\n[-] Kata sandi tidak ditemukan.")
     print(f"\nWaktu Mulai: {time.strftime('%H:%M:%S', time.localtime(start_time))}")
     print(f"Waktu Selesai: {time.strftime('%H:%M:%S', time.localtime(end_time))}")
     print(f"Durasi: {duration:.2f} detik")
