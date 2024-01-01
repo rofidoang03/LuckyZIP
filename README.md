@@ -25,3 +25,7 @@ python lucky-zip.py -f [lokasi/file_zip] -w [lokasi/wordlist]
 
 ```
 Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/wordlist]` dengan lokasi wordlist yang ingin digunakan.
+
+# Kontribusi dan Dukungan
+- Berpartisipasi: Kami mengundang kontribusi! Silakan fork repositori ini, lakukan perubahan, dan ajukan pull request.
+- Laporkan Masalah: Jika ada masalah atau saran, silakan buat isu di GitHub.
