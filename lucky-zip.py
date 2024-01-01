@@ -31,15 +31,15 @@ def crack_zip(zip_file, wordlist, start_time):
         print(f"\nPassword found: {found_password}")
     else:
         print("\nPassword not found.")
-    print(f"\nStart Time: {time.ctime(start_time)}")
-    print(f"End Time: {time.ctime(end_time)}")
+    print(f"\nStart Time: {time.strftime('%H:%M:%S', time.localtime(start_time))}")
+    print(f"End Time: {time.strftime('%H:%M:%S', time.localtime(end_time))}")
     print(f"Duration: {duration:.2f} seconds")
 
 def main():
     print("LucyZip - ZIP Password Cracker")
-    print("This tool can be found at: <https://github.com/rofidoang03/LuckyZip>\n")
+    print("This tool can be found at: <https://github.com/rofidoang03/LuckyZip>")
     if len(sys.argv) != 5 or sys.argv[1] != '-f' or sys.argv[3] != '-w':
-        print(f"usage: python3 {sys.argv[0]} -f [zip_file] -w [wordlist]")
+        print("\nUsage: python script.py -f [zip_file] -w [wordlist]")
         return
     
     zip_file = sys.argv[2]
