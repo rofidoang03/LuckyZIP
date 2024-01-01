@@ -23,7 +23,7 @@ def crack_zip(zip_file, wordlist, start_time):
     found_password = None
     try:
         with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-            for password in tqdm(passwords, desc="Mencoba membuka file zip", unit="kata sandi"):
+            for password in tqdm(passwords, desc="Memecahkan kata sandi file zip", unit="kata sandi"):
                 password = password.strip()  # Menghapus karakter spasi seperti \n
                 
                 try:
