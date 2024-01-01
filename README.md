@@ -18,3 +18,10 @@ $ cd LuckyZip
 # install dependensi
 $ pip3 install -r requirements.txt
 ```
+
+## Penggunaan
+```
+python lucky-zip.py -f [lokasi/berkas_zip] -w [lokasi/daftar_kata_sandi]
+
+```
+Ganti `[lokasi/berkas_zip]` dengan lokasi berkas ZIP Anda dan `[lokasi/daftar_kata_sandi]` dengan lokasi wordlist yang ingin digunakan.
