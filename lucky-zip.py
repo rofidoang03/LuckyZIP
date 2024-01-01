@@ -4,26 +4,32 @@ from tqdm import tqdm
 import time
 
 def crack_zip(zip_file, wordlist, start_time):
-    passwords = []
     try:
         with open(wordlist, 'r', encoding='latin-1', errors='ignore') as wordlist_file:
             passwords = wordlist_file.readlines()
+    except FileNotFoundError:
+        print(f"Error: File '{wordlist}' not found.")
+        return False
     except UnicodeDecodeError:
         print("Error: Unable to read file with Latin-1 encoding.")
         return False
         
     found_password = None
-    for password in tqdm(passwords, desc="Cracking ZIP", unit="password"):
-        password = password.strip()  # Removing whitespace characters like \n
-        
-        try:
-            with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-                zip_ref.extractall(pwd=password.encode())
-            found_password = password
-            break
-        except Exception as e:
-            # Incorrect password, move on to the next password
-            continue
+    try:
+        with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+            for password in tqdm(passwords, desc="Cracking ZIP", unit="password"):
+                password = password.strip()  # Removing whitespace characters like \n
+                
+                try:
+                    zip_ref.extractall(pwd=password.encode())
+                    found_password = password
+                    break
+                except Exception as e:
+                    # Incorrect password, move on to the next password
+                    continue
+    except FileNotFoundError:
+        print(f"Error: File '{zip_file}' not found.")
+        return False
     
     end_time = time.time()
     duration = end_time - start_time
