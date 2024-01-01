@@ -14,7 +14,7 @@ def crack_zip(zip_file, wordlist, start_time):
         with open(wordlist, 'r', encoding='latin-1', errors='ignore') as wordlist_file:
             passwords = wordlist_file.readlines()
     except FileNotFoundError:
-        print(f"Error: File '{wordlist}' not found.")
+        print(f"Error: Wordlist '{wordlist}' not found.")
         return False
     except UnicodeDecodeError:
         print("Error: Unable to read file with Latin-1 encoding.")
@@ -23,7 +23,7 @@ def crack_zip(zip_file, wordlist, start_time):
     found_password = None
     try:
         with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-            for password in tqdm(passwords, desc="Cracking ZIP", unit="password"):
+            for password in tqdm(passwords, desc="Cracking zip file", unit="password"):
                 password = password.strip()  # Removing whitespace characters like \n
                 
                 try:
@@ -34,7 +34,7 @@ def crack_zip(zip_file, wordlist, start_time):
                     # Incorrect password, move on to the next password
                     continue
     except FileNotFoundError:
-        print(f"Error: File '{zip_file}' not found.")
+        print(f"Error: Zip file '{zip_file}' not found.")
         return False
     
     end_time = time.time()
