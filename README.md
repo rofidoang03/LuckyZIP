@@ -3,7 +3,7 @@ LuckyZip adalah alat sederhana berbasis Python yang dirancang khusus untuk memec
 
 
 ## Fitur
-- memecahkan kata sandi tanpa repot: Gunakan Wordlist favoritmu untuk memecahkan kata sandi file ZIP dengan cepat.
+- Memecahkan kata sandi tanpa repot: Gunakan Wordlist favoritmu untuk memecahkan kata sandi file ZIP dengan cepat.
 - Lihat Progresnya: Pantau prosesnya dengan jelas menggunakan tqdm.
 
 ## Instalasi
