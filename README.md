@@ -24,4 +24,4 @@ $ pip3 install -r requirements.txt
 python lucky-zip.py -f [lokasi/file_zip] -w [lokasi/wordlist]
 
 ```
-Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/daftar_wordlist]` dengan lokasi wordlist yang ingin digunakan.
+Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/wordlist]` dengan lokasi wordlist yang ingin digunakan.
