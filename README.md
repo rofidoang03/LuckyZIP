@@ -1,4 +1,10 @@
 # LuckyZip
 Zip Password Cracker
 
-![img](https://github.com/rofidoang03/LuckyZIP/blob/main/lucky-zip.png)
+# Install
+```
+$ git clone https://github.com/rofidoang03/LuckyZip.git
+$ cd LuckyZip
+$ pip3 install -r requirements.txt
+$ python3 setup.py install
+```
