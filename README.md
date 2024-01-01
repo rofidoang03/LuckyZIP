@@ -1,9 +1,9 @@
 # LuckyZip
-LuckyZip adalah alat sederhana berbasis Python yang dirancang khusus untuk membuka kunci pada berkas ZIP yang terkunci. Alat ini menggunakan metode dictionary, yaitu dengan mengandalkan wordlist sebagai kumpulan kata sandi yang telah disiapkan sebelumnya. Dengan bantuan wordlist, LuckyZip mencoba berbagai kombinasi kata sandi secara sistematis untuk membuka kunci berkas ZIP yang terlindungi.
+LuckyZip adalah alat sederhana berbasis Python yang dirancang khusus untuk meng-crack kata sandi file zip. Alat ini menggunakan metode dictionary, yaitu metode yang mengandalkan wordlist sebagai kumpulan kata sandi. Dengan bantuan wordlist, LuckyZip mencoba berbagai kombinasi kata sandi secara sistematis untuk meng-crack kata sandi file zip.
 
 
 ## Fitur
-- Buka Kunci Tanpa Repot: Gunakan Wordlist favoritmu untuk membuka berkas ZIP dengan cepat.
+- Crack kata sandi tanpa repot: Gunakan Wordlist favoritmu untuk meng-crack file ZIP dengan cepat.
 - Lihat Progresnya: Pantau prosesnya dengan jelas menggunakan tqdm.
 
 ## Instalasi
@@ -21,7 +21,7 @@ $ pip3 install -r requirements.txt
 
 ## Penggunaan
 ```
-python lucky-zip.py -f [lokasi/berkas_zip] -w [lokasi/daftar_kata_sandi]
+python lucky-zip.py -f [lokasi/file_zip] -w [lokasi/wordlist]
 
 ```
-Ganti `[lokasi/berkas_zip]` dengan lokasi berkas ZIP Anda dan `[lokasi/daftar_kata_sandi]` dengan lokasi wordlist yang ingin digunakan.
+Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/daftar_wordlist]` dengan lokasi wordlist yang ingin digunakan.
