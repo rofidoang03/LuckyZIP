@@ -14,7 +14,9 @@ Dalam operasinya, LuckyZip secara berurutan mencoba setiap kata sandi dari dafta
 
 **Tersedia dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
 
-## Instalasi
+## Instalasi Android & Linux
+
+> Untuk sistem operasi Android hanya dapat menjalankan mode CLI (Command Line Interface).
 
 Pastikan Anda memiliki Python yang terinstal. Untuk memulai, ikuti langkah-langkah berikut:
 
