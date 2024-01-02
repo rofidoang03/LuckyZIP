@@ -6,7 +6,7 @@ Dalam operasinya, LuckyZIP secara berurutan mencoba setiap kata sandi dari dafta
 
 # Fitur
 
-**Memecahkan kata sandi tanpa kesulitan:** Manfaatkan Wordlist favorit Anda untuk membuka kunci file ZIP dengan cepat.
+Buka kunci file ZIP dengan cepat menggunakan Wordlist favorit Anda.
 
 **Pantau kemajuannya:** Amati prosesnya secara terperinci menggunakan tqdm.
 
