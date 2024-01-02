@@ -26,7 +26,7 @@ def crack_zip(zip_file, wordlist, start_time):
     found_password = None
     try:
         with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-            for password in tqdm(passwords, desc="Memecahkan kata sandi file zip", unit="kata sandi"):
+            for password in tqdm(passwords, desc="Mengekstrak file zip", unit="kata sandi"):
                 password = password.strip()  # Menghapus karakter spasi seperti \n
                 
                 try:
@@ -52,7 +52,7 @@ def crack_zip(zip_file, wordlist, start_time):
 
 def main():
     display_banner()
-    print("Pemecah Kata Sandi File Zip")
+    print("Pengekstrak File Zip yang dilindungi Kata Sandi")
     print("Alat ini dapat ditemukan di: <https://github.com/rofidoang03/LuckyZip>\n")
     if len(sys.argv) != 5 or sys.argv[1] != '-f' or sys.argv[3] != '-w':
         print(f"Penggunaan: lucky-zip-cli -f [file_zip] -w [wordlist]")
