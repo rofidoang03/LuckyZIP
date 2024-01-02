@@ -19,14 +19,17 @@ Dalam operasinya, LuckyZip secara berurutan mencoba setiap kata sandi dari dafta
 Pastikan Anda memiliki Python yang terinstal. Untuk memulai, ikuti langkah-langkah berikut:
 
 ```bash
-# klon repositori
+# klon repositori LuckyZIP 
 $ git clone https://github.com/rofidoang03/LuckyZip.git
 
-# pindah ke direktori luckyzip
+# Pindah ke direktori LuckyZIP 
 $ cd LuckyZip
 
-# install dependensi
+# Instal dependensi
 $ pip3 install -r requirements.txt
+
+# Instal LuckyZIP
+$ bash instal.sh
 ```
 
 ## Penggunaan
