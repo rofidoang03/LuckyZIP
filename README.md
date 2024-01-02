@@ -14,24 +14,14 @@ Dalam operasinya, LuckyZip secara berurutan mencoba setiap kata sandi dari dafta
 
 **Tersedia dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
 
-## Instalasi Android & Linux
+## Instalasi Android
 
 > Untuk sistem operasi Android hanya dapat menjalankan mode CLI (Command Line Interface).
 
-Pastikan Anda memiliki Python yang terinstal. Untuk memulai, ikuti langkah-langkah berikut:
+Salin dan tempelkan perintah berikut
 
 ```bash
-# klon repositori LuckyZIP 
-$ git clone https://github.com/rofidoang03/LuckyZip.git
-
-# Pindah ke direktori LuckyZIP 
-$ cd LuckyZip
-
-# Instal dependensi
-$ pip3 install -r requirements.txt
-
-# Instal LuckyZIP
-$ bash instal.sh
+pkg update -y ; pkg upgrade -y ; pkg install git -y pkg install python3 -y ; git clone https://github.com/rofidoang03/LuckyZIP ; cd LuckyZIP ; pip3 install -r requirements.txt ; bash instal.sh
 ```
 
 ## Penggunaan
