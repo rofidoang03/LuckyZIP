@@ -54,7 +54,7 @@ def select_wordlist():
     wordlist_entry.insert(0, filename)
 
 root = tk.Tk()
-root.title("LuckyZip")
+root.title("LuckyZIP (https://github.com/rofidoang03/LuckyZIP)")
 app_width = 800
 app_height = 400
 root.resizable(False, False)
