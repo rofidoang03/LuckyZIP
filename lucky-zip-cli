@@ -55,7 +55,7 @@ def main():
     print("Pemecah Kata Sandi File Zip")
     print("Alat ini dapat ditemukan di: <https://github.com/rofidoang03/LuckyZip>\n")
     if len(sys.argv) != 5 or sys.argv[1] != '-f' or sys.argv[3] != '-w':
-        print(f"Penggunaan: python {sys.argv[0]} -f [file_zip] -w [wordlist]")
+        print(f"Penggunaan: lucky-zip-cli -f [file_zip] -w [wordlist]")
         return
     
     zip_file = sys.argv[2]
