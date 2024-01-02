@@ -3,6 +3,9 @@ from tkinter import filedialog
 import zipfile
 from datetime import datetime
 
+def display_result(result):
+    result_label.config(text=result)
+
 def extract_zip():
     zip_filename = file_entry.get()
     wordlist_filename = wordlist_entry.get()
@@ -10,6 +13,7 @@ def extract_zip():
     if not zip_filename or not wordlist_filename:
         return
 
+    found_password = None
     try:
         with zipfile.ZipFile(zip_filename) as zip_ref:
             with open(wordlist_filename, 'r', encoding='latin-1', errors='ignore') as wordlist:
@@ -21,14 +25,21 @@ def extract_zip():
                     root.update_idletasks()
                     try:
                         zip_ref.extractall(pwd=password.encode('latin-1'))
-                        log_text.insert(tk.END, f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {zip_filename}, {wordlist_filename}, Kata sandi ditemukan: {password}\n")
+                        found_password = password
                         break
                     except Exception as e:
                         pass
                 else:
-                    log_text.insert(tk.END, f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {zip_filename}, {wordlist_filename}, Kata sandi tidak ditemukan dalam wordlist.\n")
+                    display_result("Kata sandi tidak ditemukan dalam wordlist.")
     except Exception as e:
         pass
+    
+    if found_password:
+        log_text.insert(tk.END, f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {zip_filename}, {wordlist_filename}, Kata sandi ditemukan: {found_password}\n")
+        display_result(f"Kata sandi ditemukan: {found_password}")
+    else:
+        log_text.insert(tk.END, f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {zip_filename}, {wordlist_filename}, Kata sandi tidak ditemukan dalam wordlist.\n")
+        display_result("Kata sandi tidak ditemukan dalam wordlist.")
 
 def select_file():
     filename = filedialog.askopenfilename(title="Pilih file ZIP")
@@ -83,6 +94,9 @@ log_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 scrollbar = tk.Scrollbar(log_frame, orient=tk.VERTICAL, command=log_text.yview)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 log_text.config(yscrollcommand=scrollbar.set)
+
+result_label = tk.Label(main_frame, text="", font=("Arial", 12), fg='red', bg='black')
+result_label.grid(row=4, columnspan=3, pady=5)
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
