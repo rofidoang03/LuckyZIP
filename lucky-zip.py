@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# latin-1
+
 import zipfile
 import sys
 from tqdm import tqdm
