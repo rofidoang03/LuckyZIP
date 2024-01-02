@@ -6,13 +6,14 @@ Dalam operasinya, LuckyZip secara berurutan mencoba setiap kata sandi dari dafta
 
 ## Fitur
 
-- **Memecahkan kata sandi tanpa repot:** Gunakan Wordlist favoritmu untuk memecahkan kata sandi file ZIP dengan cepat.
-- **Lihat Progresnya:** Pantau prosesnya dengan jelas menggunakan tqdm.
+**Memecahkan kata sandi tanpa kesulitan:** Manfaatkan Wordlist favorit Anda untuk membuka kunci file ZIP dengan cepat.
 
-- **Mendukung banyak sistem operasi:** Contohnya Android, Linux (berbasis Debian/Ubuntu) dan Windows.
+**Pantau kemajuannya:** Amati prosesnya secara terperinci menggunakan tqdm.
 
-- **Terdapat dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
-- 
+**Kompatibel dengan beragam sistem operasi:** Seperti Android, Linux (berbasis Debian/Ubuntu), dan Windows.
+
+**Tersedia dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
+
 ## Instalasi
 
 Pastikan Anda memiliki Python yang terinstal. Untuk memulai, ikuti langkah-langkah berikut:
