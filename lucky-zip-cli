@@ -8,7 +8,7 @@ import time
 import pyfiglet
 
 def display_banner():
-    banner = pyfiglet.figlet_format("LuckyZip", font="standard")
+    banner = pyfiglet.figlet_format("LuckyZIP", font="standard")
     colored_banner = f"\033[1;96m{banner}\033[0m"  # Kode escape warna biru ANSI
     print(colored_banner)
 
