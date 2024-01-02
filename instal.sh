@@ -1,5 +1,8 @@
 #!/bin/bash
 # Script untuk instal LuckyZip
 
-s=("lucky-zip-cli" "lucky-zip-gui")
-chmod +x "${s[@]}"
+scripts=("lucky-zip-cli" "lucky-zip-gui")
+chmod +x "${scripts[@]}"
+path="/usr/bin/"
+mv "${scripts[@]}" "${path}"
+echo "Proses instalasi selesai."
