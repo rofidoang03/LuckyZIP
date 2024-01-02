@@ -10,7 +10,7 @@ Dalam operasinya, LuckyZIP secara berurutan mencoba setiap kata sandi dari dafta
 
 **Pantau kemajuannya:** Amati prosesnya secara terperinci menggunakan tqdm.
 
-**Kompatibel dengan beragam sistem operasi:** Seperti Android, Linux (berbasis Debian/Ubuntu), dan Windows.
+**Kompatibel dengan beragam sistem operasi:** Yaitu Android (Termux) dan Linux (berbasis Debian/Ubuntu).
 
 **Tersedia dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
 
