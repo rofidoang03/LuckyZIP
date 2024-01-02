@@ -21,7 +21,7 @@ Dalam operasinya, LuckyZip secara berurutan mencoba setiap kata sandi dari dafta
 Salin dan tempelkan perintah berikut
 
 ```bash
-pkg update -y ; pkg upgrade -y ; pkg install git -y pkg install python3 -y ; git clone https://github.com/rofidoang03/LuckyZIP ; cd LuckyZIP ; pip3 install -r requirements.txt ; bash instal.sh
+pkg update -y ; pkg upgrade -y ; pkg install git -y ; pkg install python3 -y ; git clone https://github.com/rofidoang03/LuckyZIP ; cd LuckyZIP ; pip3 install -r requirements.txt ; bash instal.sh
 ```
 
 ## Penggunaan
