@@ -12,7 +12,7 @@ if [[ "${cek}" == "Android" ]]; then
 elif [[ "${cek}" == "GNU/Linux" ]]; then
     path="/usr/bin"
     mv "${scripts[@]}" "${path}" 
-    pip3 install linux.txt
+    pip3 install -r linux.txt
     echo "Proses instalasi selesai."
 fi
     
