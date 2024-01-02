@@ -35,6 +35,9 @@ Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/wordlist]` de
 
 - ## Android
   ![img](https://github.com/rofidoang03/LuckyZIP/blob/main/ss_android.jpg)
+- ## Linux
+  ![img]()
+  ![img]()
 
 ## Kontribusi dan Dukungan
 
