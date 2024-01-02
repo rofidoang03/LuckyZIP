@@ -37,10 +37,18 @@ apt-get update -y ; apt-get upgrade -y ; apt-get install git -y ; apt-get instal
 
 ## Penggunaan
 
+- ## CLI
+
 ```
 python lucky-zip.py -f [lokasi/file_zip] -w [lokasi/wordlist]
 ```
+
 Ganti `[lokasi/file_zip]` dengan lokasi file ZIP Anda dan `[lokasi/wordlist]` dengan lokasi wordlist yang ingin digunakan.
+- ## GUI
+
+```
+lucky-zip-gui
+```
 
 ## Screenshot
 
