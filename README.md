@@ -6,13 +6,10 @@ Dalam operasinya, LuckyZIP secara berurutan mencoba setiap kata sandi dari dafta
 
 # Fitur
 
-Buka kunci file ZIP dengan cepat menggunakan Wordlist favorit Anda.
-
-**Pantau kemajuannya:** Amati prosesnya secara terperinci menggunakan tqdm.
-
-**Kompatibel dengan beragam sistem operasi:** Yaitu Android (Termux) dan Linux (berbasis Debian/Ubuntu).
-
-**Tersedia dua mode:** CLI (Command Line Interface) dan GUI (Graphical User Interface).
+- Buka kunci file ZIP dengan cepat menggunakan Wordlist favorit Anda
+- Memantau kemajuannya secara terperinci dengan tqdm. 
+- Kompatibel dengan berbagai sistem operasi, termasuk Android (Termux) dan Linux (berbasis Debian/Ubuntu)
+- mendukung dua mode, yaitu CLI (Command Line Interface) dan GUI (Graphical User Interface).
 
 # Instalasi
 
